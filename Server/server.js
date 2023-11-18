@@ -22,7 +22,7 @@ dotenv.config({
 
 
 mongoose.connect(process.env.MONGODB_CLOUD).then(() => {
-    console.log("Connected to DB")
+    // console.log("Connected to DB")
 }).catch((err) => {
     console.log(err)
 })
@@ -32,5 +32,5 @@ let server = http.createServer(app)
 
 server.listen(process.env.PORT, (err) => {
     if (err) console.log(err)
-    console.log("SERVER RUNNING AT PORT NO : " + process.env.PORT)
+    // console.log("SERVER RUNNING AT PORT NO : " + process.env.PORT)
 })
