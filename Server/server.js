@@ -19,9 +19,9 @@ dotenv.config({
 // local
 // cloud 
 
-const MONGODB_CLOUD = "mongodb+srv://NirajShah:R0NyfsdYg0VyoGPU@cluster0.cqgiqg5.mongodb.net/?retryWrites=true&w=majority"
 
-mongoose.connect(MONGODB_CLOUD).then(() => {
+
+mongoose.connect(process.env.MONGODB_CLOUD).then(() => {
     console.log("Connected to DB")
 }).catch((err) => {
     console.log(err)
