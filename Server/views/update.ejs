@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="updatebox">
+        <h1>UPDATE TASK</h1>
+        <form action="/app/v1/tasks/<%=task.id%>?_method=PUT" method="post">
+            <input type="text" value="<%=task.task%>" name="task" id="task">
+            <button type="submit">UPDATE</button>
+        </form>
+    </div>
+</body>
+</html>

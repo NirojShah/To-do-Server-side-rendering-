@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    /* min-height: 100vh; */
+    background-color: blueviolet;
+
+}
+
+.box{
+    width: 50%;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.box>h1{
+    width: 60%;
+}
+
+.box>form{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box>form>input{
+    width: 80%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+    padding-left: 5px;
+}
+
+.box>form>input:focus{
+    outline: none;
+    border: 1px solid blue;
+}
+
+.box>form>button{
+    width: 100px;
+    height: 30px;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid black;
+    /* border-left: none; */
+    background-color: white;
+    color: black;
+}
+
+.box>form>button:focus,.box>form>button:hover{
+    background-color: rgb(168, 168, 168);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+/* LIST */
+
+.list{
+    margin: 20px auto 20px auto;
+    max-width: 680px;
+}
+
+.list>h3{
+    text-align: center;
+}
+
+.list>table{
+    width: 100%;
+    border: 1px solid black;
+}
+
+.list>table th{
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-right: 1px solid black;
+    text-align: left;
+    border: 1px solid black;
+}
+
+.list>table tr td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    text-align: left;
+    
+}
+
+.list>table>tr:nth-child(even){
+    background-color: white;
+}
+#delete{
+    background-color: rgb(255, 160, 52);
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight : 600;
+}
+
+#update{
+    background-color: rgb(225, 255, 58);
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight : 600;
+}
+
+
+/* UPDATE */
+
+.updatebox{
+    width: 50%;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.updatebox>h1{
+    width: 60%;
+}
+
+.updatebox>form{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.updatebox>form>input{
+    width: 80%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+    padding-left: 5px;
+}
+
+.updatebox>form>input:focus{
+    outline: none;
+    border: 1px solid blue;
+}
+
+.updatebox>form>button{
+    width: 100px;
+    height: 30px;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid black;
+    /* border-left: none; */
+    background-color: white;
+    color: black;
+}
+
+.updatebox>form>button:focus,.box>form>button:hover{
+    background-color: rgb(168, 168, 168);
+}
+
