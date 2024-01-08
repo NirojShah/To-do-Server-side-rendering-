@@ -3,9 +3,9 @@ const mongoose = require("mongoose")
 const app = require("./app")
 const dotenv = require("dotenv")
 
-// dotenv.config({
-//     path:"./.env"
-// })
+dotenv.config({
+    path:"./.env"
+})
 
 
 MONGODB_CLOUD = `mongodb+srv://nirajshah950:92ic8oHSXr1BkwqZ@todoapplication.mq2dffn.mongodb.net/?retryWrites=true&w=majority`
@@ -25,8 +25,8 @@ PORT=5000
 
 
 
-mongoose.connect(MONGODB_CLOUD).then(() => {
-    // console.log("Connected to DB")
+mongoose.connect(process.env.MONGODB_CLOUD).then(() => {
+    console.log("Connected to DB")
 }).catch((err) => {
     console.log(err)
 })
@@ -36,5 +36,5 @@ let server = http.createServer(app)
 
 server.listen(PORT, (err) => {
     if (err) console.log(err)
-    // console.log("SERVER RUNNING AT PORT NO : " + process.env.PORT)
+    console.log("SERVER RUNNING AT PORT NO : " + process.env.PORT)
 })
